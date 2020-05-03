@@ -1,0 +1,18 @@
+pip install matplotlib
+pip install pyautogui
+pip install python-neat
+pip install pillow
+pip install numpy
+#tesseract engine: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-setup-3.05.02-20180621.exe
+#add tesseract to PATH (C:\Program Files (x86)\Tesseract-OCR)
+pip install pytesseract
+pip install opencv-python
+
+#download pywin32 whl: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32
+# pip install what you downloaded
+
+
+#download pyHook whl: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyhook
+# pip install what you downloaded
+
+pip install graphviz
