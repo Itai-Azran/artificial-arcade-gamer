@@ -1,27 +1,25 @@
 # artificial-arcade-gamer
-A generic 2D arcade gamer that with just simple settings, can learn to play in any arcade game using NEAT model
+A generic 2D arcade gamer that requires simple configuration, can learn to play any arcade game.
 
 
-Recommended games:
-Flappy Bird
+Recommended games:   
+Flappy Bird   
 T-Rex game
 
 
-Algoirithm:
-Our program works like this-
-1. It take each frame and turn it to a black-white image of objects and background using.
-2. Every frame divided in to 16x16 slots with each slot is an input node of the genome.
-3. Each genome calc every frame using is own network and decide what output to generate
-   where the possible outputs are the game keys.
-4. After a genome loses, he check his score using ocr and than the next genome runs his turn.
-5. After all the population (which default is 15 genomes) run their turn, a new smarter generation get going.
-6. when the last generation ends (which default is generation 30), the winning genome's net presented.
+Algorithm:
+1. Take a screenshot from the chosen window, and turn it to black and white.
+2. Every frame is then divided in to slots (default 16x16 slots) where each slot is an input node of the NEAT genome.
+3. The genome generate the which key to press for the given frame.
+4. After a genome loses, he check his score using OCR and the the next genome runs in a new game.
+5. After all the population (default 15 genomes) run their turn, a new generation, which is improved based on the result of the last one, playes.
+6. When the last generation ends (default 30 generations), the winning genome is presented.
 
 
-Notes:
-Starting key - starting key is a key that start the game after the restart button pressed (not every needs).
-    example: the key 'd' in snake game
+Notes:   
+Starting key - starting key is the key that should be pressed to start the game after the restart button was pressed.   
+for example the key 'd' in snake.
 
-Game's window - the game's window needs to be opened before running the program
+Game's window - the game's window needs to be open before running the program.
 
-Mouse - the algorithm does not work so well in games that plays by the mouse
+Mouse - at the moment the mouse functionality is not fully supported yet.
